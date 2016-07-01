@@ -35,6 +35,39 @@ angular
     })
     
     
+    
+    // Ruta para la página de visualizaciones
+    .state('app.views', {
+                url:'views',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/views.html',
+                        controller  : 'ViewsCtrl'                  
+                    }
+                }
+    })
+    
+    // Ruta para la página de visualizaciones house and class
+    .state('app.views.houseandclass', {
+                url:'views/houseandclass',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/gviews/houseandclass.html',
+                        controller  : 'ViewsCtrl'                  
+                    }
+                }
+    })
+    
+    // Ruta para la página de visualizaciones consumptionbyclass.html
+    .state('app.views.consumptionbyclass', {
+                url:'views/consumptionbyclass.html',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/gviews/consumptionbyclass.html',
+                        controller  : 'ViewsCtrl'                  
+                    }
+                }
+    })
 /*****************************FIN VISUALIZACIONES***************************/
 
     // Ruta para la página de Acerca de
